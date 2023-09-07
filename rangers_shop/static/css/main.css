@@ -1,0 +1,26 @@
+/* css for our shop page*/
+
+.shop-header {
+    background-image: url('https://deadline.com/wp-content/uploads/2019/09/little-shop.jpg?w=681&h=383&crop=1') ;
+    background-size: cover;
+    height: 700px;
+    color: black;
+}
+
+.shop-header a {
+    color: red;
+}
+
+.nav-link a :visited{
+    color: red;
+}
+
+.nav-link a :link{
+    color: white;
+}
+
+
+.shop-stats {
+    color: white;
+}
+
