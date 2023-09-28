@@ -51,6 +51,9 @@ class User(db.Model, UserMixin):
         return f"<USER: {self.username}"
     
 
+    
+    
+
 class Product(db.Model):
     prod_id = db.Column(db.String, primary_key = True)
     name = db.Column(db.String(100), nullable = False)
@@ -106,6 +109,8 @@ class Customer(db.Model):
 
 # many to many relationship with Products, Customers and Orders
 # We need a join table
+
+
 
 class ProdOrder(db.Model):
     prodorder_id = db.Column(db.String, primary_key = True)

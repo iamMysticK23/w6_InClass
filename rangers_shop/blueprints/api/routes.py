@@ -138,7 +138,7 @@ def update_order(order_id):
 
     elif prodorder.quantity > new_quantity:
         product.increment_quantity(diff) # increase available inventory
-        product.decrement_order_total(prodorder.price) # order total is going to be less
+        order.decrement_order_total(prodorder.price) # order total is going to be less
 
     prodorder.update_quantity(new_quantity)
 
